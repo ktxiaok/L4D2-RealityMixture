@@ -1,0 +1,15 @@
+UnlitGeneric
+{
+    $basetexture "reality_mixture/horror/horror_12"
+    $nofog 1
+
+    Proxies
+    {
+        AnimatedTexture
+        {
+            animatedTextureVar $basetexture
+            animatedTextureFrameNumVar $frame
+            animatedTextureFrameRate 10
+        }
+    }
+}

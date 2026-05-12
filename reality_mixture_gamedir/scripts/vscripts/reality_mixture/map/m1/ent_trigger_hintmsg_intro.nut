@@ -1,0 +1,1 @@
+::RealityMixture.TriggerHintMessageDisplayer(self, { Message = "{NoWayButOnlyEntrance}" });

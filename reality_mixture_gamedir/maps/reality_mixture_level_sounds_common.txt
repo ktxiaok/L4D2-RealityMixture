@@ -1,0 +1,1023 @@
+RealityMixture.Player.InsanityNoise
+{
+	volume 1.0
+	pitch "80,120"
+	soundlevel SNDLVL_NONE
+	rndwave
+	{
+		wave "reality_mixture/player/insanity_noise_01.wav"
+		wave "reality_mixture/player/insanity_noise_02.wav"
+		wave "reality_mixture/player/insanity_noise_03.wav"
+		wave "reality_mixture/player/insanity_noise_04.wav"
+		wave "reality_mixture/player/insanity_noise_05.wav"
+		wave "reality_mixture/player/insanity_noise_06.wav"
+		wave "reality_mixture/player/insanity_noise_07.wav"
+		wave "reality_mixture/player/insanity_noise_08.wav"
+		wave "reality_mixture/player/insanity_noise_09.wav"
+	}
+}
+
+
+
+
+"MegaMobIncoming"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+
+///////////////////////////////// Bosses!! //////////////////////////
+
+// --------------------------------------------------------------------
+// TANKS
+// --------------------------------------------------------------------
+"Event.Tank"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+// tank midpoint
+// half way through the finale a tank shows up
+"Event.TankMidpoint"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+
+// tank brothers
+// Before the final zombie battle 2 tanks show up
+"Event.TankBrothers"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+
+// ----------------------------------------------
+// witch
+// ----------------------------------------------
+"Event.WitchAttack"  
+ {
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+ 	"wave"			"@#music/witch/PsychoWitch.wav"
+	
+	GameData
+	{
+		"MusicDuckTrackList"    "tank"
+		"MusicBlockTrackList"    "zombat, zombat2, zombat3, zombatIntro, ambient"
+
+		"MusicTrack"            "witch"
+		"MusicPriority"			"CRITICAL"
+	}
+
+}
+"Event.WitchBurning"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+ 	"wave"			"@#music/witch/WitchRoast.wav"
+  
+	
+	GameData
+	{
+		"MusicDuckTrackList"    "tank"
+		"MusicBlockTrackList"    "zombat, zombat2, zombat3, zombatIntro, ambient"
+
+		"MusicTrack"            "witch"
+		"MusicPriority"			"CRITICAL" 
+	}
+
+}
+
+"Event.WitchRage"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"		"SNDLVL_NONE"
+ 	"wave"			"music/witch/WitchEncroacher.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "witch"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+
+"Event.WitchDead"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"wave"			"common/null.wav"
+
+	GameData
+	{
+		"MusicTrack"            "witch"
+	}
+}
+
+"Event.WanderingWitch"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_145dB"
+
+	"rndwave"
+	{
+		"wave"		"music/witch/lost_little_witch_01a.wav"
+		"wave"		"music/witch/lost_little_witch_01b.wav"
+		"wave"		"music/witch/lost_little_witch_02a.wav"
+		"wave"		"music/witch/lost_little_witch_02b.wav"
+		"wave"		"music/witch/lost_little_witch_03a.wav"
+		"wave"		"music/witch/lost_little_witch_03b.wav"
+		"wave"		"music/witch/lost_little_witch_04a.wav"
+		"wave"		"music/witch/lost_little_witch_04b.wav"
+	}	
+	GameData
+	{
+		"MusicTrack"            "witchChoir"
+		"MusicPriority"			"CRITICAL"
+		"MusicFadeOut"         	"1.5"
+
+	}
+}
+"Event.WanderingAngryWitch"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.87"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"		"music/witch/LOUD_angry_little_witch_04.wav"
+	}	
+	GameData
+	{
+		"MusicTrack"            "witchChoir"
+		"MusicPriority"			"CRITICAL"
+		"MusicFadeOut"         	"1.5"
+	}
+}
+"Event.WanderingAngryWitch2"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.87"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"		"music/witch/LOUD_angry_little_witch_03.wav"
+//		 "wave"		"common/null.wav"
+	}	
+	GameData
+	{
+		"MusicTrack"            "witchChoir"
+		"MusicPriority"			"CRITICAL"
+		"MusicFadeOut"         	"1.5"
+	}
+}
+"Event.WanderingAngryWitch3"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.87"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"		"music/witch/LOUD_angry_little_witch_02.wav"
+//		 "wave"		"common/null.wav"
+	}	
+	GameData
+	{
+		"MusicTrack"            "witchChoir"
+		"MusicPriority"			"CRITICAL"
+		"MusicFadeOut"         	"1.5"
+	}
+}
+"Event.WanderingAngryWitch4"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.87"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"		"music/witch/LOUD_angry_little_witch_01.wav"
+		// "wave"		"common/null.wav"
+	}	
+	GameData
+	{
+		"MusicTrack"            "witchChoir"
+		"MusicPriority"			"CRITICAL"
+		"MusicFadeOut"         	"1.5"
+	}
+}
+
+// --------------------------------------------------------------------
+// mobbed
+// --------------------------------------------------------------------
+"Event.Mobbed"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"@#music/terror/MobRules.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "mobRules"
+		"MusicDuckTrackList"    "all"
+
+		"MusicPriority"			"HIGH"
+	}
+}
+// --------------------------------------------------------------------
+// Hunter Pounce
+// While being torn apart by a hunter
+// --------------------------------------------------------------------
+"Event.HunterPounce"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"@#music/pzattack/Exenteration.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "PZAttack"
+		"MusicDuckTrackList"    "all"
+
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"		"PLAY_SPLIT"
+	}
+}
+"Event.HunterHit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_100dB"
+	"wave"			"music/tags/ExenterationHit.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "hunterHits"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+
+// --------------------------------------------------------------------
+// SMOKER
+// While being choked by a smoker
+// --------------------------------------------------------------------
+"Event.SmokerChoke"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"@#music/pzattack/Asphyxiation.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "PZAttack"
+		"MusicDuckTrackList"    "all"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"		"PLAY_SPLIT"
+	}
+}
+"Event.SmokerChokeHit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_100dB"
+	"wave"			"@#music/tags/AsphyxiationHit.wav"
+
+	GameData
+	{
+		"MusicTrack"            "smokerHits"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+
+"Event.SmokerDrag"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"@#music/terror/TongueTied.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "PZAttack"
+		"MusicDuckTrackList"    "all"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+"Event.SmokerDragHit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_100dB"
+	"wave"			"music/tags/TongueTiedHit.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "smokerHits"
+		"MusicDuckTrackList"    "all"
+		"MusicPriority"			"CRITICAL"
+		"MusicParameters"		"NO_INTENSITY_TRACK"
+	}
+}
+
+// --------------------------------------------------------------------
+// Boomer
+// --------------------------------------------------------------------
+"Event.VomitInTheFace"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"@#music/terror/Pukricide.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "PZAttack"
+		"MusicDuckTrackList"    "all"
+		"MusicPriority"			"HIGH"
+		"MusicMaster"		"PLAY_SPLIT"
+	}
+}
+
+"Event.BoomerHit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_100dB"
+	"wave"			"music/tags/PukricideHit.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "boomerHits"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+
+// --------------------------------------------------------------------
+// Charger smash
+// While being torn apart by a hunter
+// --------------------------------------------------------------------
+"Event.ChargerSmash"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"@#music/pzattack/Contusion.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "PZAttack"
+		"MusicDuckTrackList"    "all"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"		"PLAY_SPLIT"
+	}
+}
+"Event.ChargerHit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_100dB"
+	"wave"			"music/tags/ContusionHit.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "chargerHits"
+		// "MusicDuckTrackList"    "all"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+"Event.ChargerSlam"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.79"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"@#music/pzattack/Mortification.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "PZAttack"
+		"MusicDuckTrackList"    "all"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"		"PLAY_SPLIT"
+	}
+}
+"Event.ChargerSlamHit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_100dB"
+	"wave"			"music/tags/MortificationHit.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "chargerSlamHits"
+		// "MusicDuckTrackList"    "all"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+// --------------------------------------------------------------------
+// Jockey ride
+// --------------------------------------------------------------------
+"Event.JockeyRide"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.78"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"@#music/pzattack/Vassalation.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "PZAttack"
+		"MusicDuckTrackList"    "all"
+		"MusicPriority"			"CRITICAL"
+		"MusicMaster"		"PLAY_SPLIT"
+	}
+}
+"Event.JockeyHit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_100dB"
+	"wave"			"music/tags/VassalationHit.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "jockeyHits"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+
+// --------------------------------------------------------------------
+// Spitter Spit
+// --------------------------------------------------------------------
+"Event.SpitterSpit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_80dB"
+	"wave"			")music/terror/PileOBile.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "spitterSpit"
+//		"MusicDuckTrackList"    "all"
+		"MusicPriority"			"CRITICAL"
+//		"MusicMaster"		"PLAY_SPLIT"
+	}
+}
+"Event.SpitterBurn"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"@#music/pzattack/Enzymicide.wav"
+//	"wave"			"common/null.wav"
+
+	GameData
+	{
+		"MusicTrack"            "PZAttack"
+		"MusicDuckTrackList"    "all"
+		"MusicPriority"			"HIGH"
+		"MusicMaster"		"PLAY_SPLIT"
+	}
+}
+
+// --------------------------------------------------------------------
+// Alerts
+// --------------------------------------------------------------------
+// --------------------------------------------------------------------
+// Alerts
+// --------------------------------------------------------------------
+"Event.BoomerAlertClose"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_110dB"
+	"wave"			"music/bacteria/BoomerBacteria.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "BoomerAlert"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+"Event.BoomerAlert"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_120dB"
+	"wave"			"music/bacteria/BoomerBacteriaS.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "BoomerAlert"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+"Event.BoomerAlertFar"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_125dB"
+	"wave"			"music/bacteria/BoomerBacteriaS.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "BoomerAlert"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+"Event.SmokerAlertClose"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_110dB"
+	"wave"			"music/bacteria/SmokerBacteria.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "SmokerAlert"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+"Event.SmokerAlert"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_120dB"
+	"wave"			"music/bacteria/SmokerBacteriaS.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "SmokerAlert"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+"Event.SmokerAlertFar"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_125dB"
+	"wave"			"music/bacteria/SmokerBacteriaS.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "SmokerAlert"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+"Event.HunterAlertClose"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_110dB"
+	"wave"			"music/bacteria/HunterBacteria.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "HunterAlert"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+"Event.HunterAlert"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_115dB"
+	"wave"			"music/bacteria/HunterBacteriaS.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "HunterAlert"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+"Event.HunterAlertFar"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_120dB"
+	"wave"			"music/bacteria/HunterBacteriaS.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "HunterAlert"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+"Event.ChargerAlertClose"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_110dB"
+	"wave"			"music/bacteria/ChargerBacteria.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "ChargerAlert"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+"Event.ChargerAlert"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_115dB"
+	"wave"			"music/bacteria/ChargerBacteriaS.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "ChargerAlert"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+"Event.ChargerAlertFar"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_120dB"
+	"wave"			"music/bacteria/ChargerBacteriaS.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "ChargerAlert"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+"Event.SpitterAlertClose"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_110dB"
+	"wave"			"music/bacteria/SpitterBacteria.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "SpitterAlert"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+"Event.SpitterAlert"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_115dB"
+	"wave"			"music/bacteria/SpitterBacteriaS.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "SpitterAlert"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+"Event.SpitterAlertFar"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_120dB"
+	"wave"			"music/bacteria/SpitterBacteriaS.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "SpitterAlert"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+"Event.JockeyAlertClose"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_110dB"
+	"wave"			"music/bacteria/JockeyBacteria.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "JockeyAlert"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+"Event.JockeyAlert"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_115dB"
+	"wave"			"music/bacteria/JockeyBacteriaS.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "JockeyAlert"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+"Event.JockeyAlertFar"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_120dB"
+	"wave"			"music/bacteria/JockeyBacteriaS.wav"
+	
+	GameData
+	{
+		"MusicTrack"            "JockeyAlert"
+		"MusicPriority"			"CRITICAL"
+	}
+}
+
+// --------------------------------------------------------------------
+// zombat music
+// --------------------------------------------------------------------
+// --------------------------------------------------------------------
+// combat music
+// --------------------------------------------------------------------
+"Event.Zombat_Intro_1"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+// swapped for new, check A/D V.S. B/C
+"Event.Zombat_1"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+"Event.Zombat_A_1"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+"Event.Zombat_B_1"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+
+//--------------------------------------------------------------------
+// --------------------------------------------------------------------
+// combat music
+// --------------------------------------------------------------------
+"Event.Zombat_Intro_2"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+// swapped out for new 2 C and D
+"Event.Zombat_2"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+"Event.Zombat_A_2"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+"Event.Zombat_B_2"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+
+//--------------------------------------------------------------------
+// --------------------------------------------------------------------
+// combat music
+// --------------------------------------------------------------------
+"Event.Zombat_Intro_3"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+"Event.Zombat_3"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+"Event.Zombat_A_3"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+"Event.Zombat_B_3"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+
+
+
+// --------------------------------------------------------------------
+// combat music
+// --------------------------------------------------------------------
+"Event.Zombat_Intro_4"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+// only b + c from old are ok, 
+"Event.Zombat_4"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+"Event.Zombat_A_4"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+"Event.Zombat_B_4"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+
+//--------------------------------------------------------------------
+
+// --------------------------------------------------------------------
+// combat music
+// --------------------------------------------------------------------
+"Event.Zombat_Intro_5"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+// new ones no good, don't add
+"Event.Zombat_5"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+"Event.Zombat_A_5"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+"Event.Zombat_B_5"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+
+// --------------------------------------------------------------------
+// combat music
+// --------------------------------------------------------------------
+"Event.Zombat_Intro_6"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+// NONE OF THE 6s are good find something else 
+"Event.Zombat_6"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+
+"Event.Zombat_A_6"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+
+"Event.Zombat_B_6"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+
+//--------------------------------------------------------------------
+
+// --------------------------------------------------------------------
+// combat music
+// --------------------------------------------------------------------
+"Event.Zombat_Intro_7"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+// new ones no good, using existing
+"Event.Zombat_7"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+"Event.Zombat_A_7"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+"Event.Zombat_B_7"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+
+//--------------------------------------------------------------------
+
+// --------------------------------------------------------------------
+// combat music
+// --------------------------------------------------------------------
+"Event.Zombat_Intro_8"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+// only b + c from old are ok, 
+"Event.Zombat_8"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+"Event.Zombat_A_8"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+"Event.Zombat_B_8"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+
+// --------------------------------------------------------------------
+// combat music
+// --------------------------------------------------------------------
+"Event.Zombat_Intro_9"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+
+"Event.Zombat_9"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+"Event.Zombat_A_9"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+"Event.Zombat_B_9"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+// --------------------------------------------------------------------
+// combat music
+// --------------------------------------------------------------------
+"Event.Zombat_Intro_10"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+// only b + c from old are ok, 
+"Event.Zombat_10"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+"Event.Zombat_A_10"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+"Event.Zombat_B_10"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+
+// --------------------------------------------------------------------
+// combat music
+// --------------------------------------------------------------------
+"Event.Zombat_Intro_11"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+// only b + c from old are ok, 
+"Event.Zombat_11"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+"Event.Zombat_A_11"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}
+"Event.Zombat_B_11"
+{
+	soundlevel SNDLVL_NONE
+	wave "common/null.wav"
+}

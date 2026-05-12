@@ -1,0 +1,1 @@
+::RealityMixture.FaceAnomaly(self);

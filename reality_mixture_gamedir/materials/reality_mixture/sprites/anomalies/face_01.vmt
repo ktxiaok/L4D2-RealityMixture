@@ -1,0 +1,6 @@
+Sprite
+{
+    $spriteorientation vp_parallel
+    $spriteorigin "[0.5 0.5]"
+    $basetexture "reality_mixture/sprites/anomalies/face_01"
+}

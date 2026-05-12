@@ -1,0 +1,12 @@
+temp/
+backups/
+
+l4d2_dir_symlink
+
+*.vmx
+*.bsp
+*.vpk
+*.log
+*.prt
+*.kra~
+sound.cache

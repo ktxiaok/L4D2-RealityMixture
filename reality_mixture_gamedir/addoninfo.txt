@@ -1,0 +1,13 @@
+"AddonInfo"
+{
+	addonversion		"0.1.0"				//Max 31 	characters. Allows decimals.
+	addontitle			"Reality Mixture"	//Max 127 	characters.
+	addonauthor			"KtOrangeeK"	//Max 119 	characters.
+	addonDescription	"A horror map for Left 4 Dead 2."	//Max 1023 	characters.
+	
+	// These booleans act as content descriptors, showing up as tags ingame.
+	// Users can filter addons by these tags and see what's inside without reading the description.
+	// Set to 1 where applicable. You can use multiple, such as "Weapons" and "skins".
+	addonContent_Campaign		1	//Has multiple maps that string into a campaign.				Represented ingame as: Campaigns
+	addonContent_Map			1 	//Has at least one map.											Represented ingame as: Campaigns
+}

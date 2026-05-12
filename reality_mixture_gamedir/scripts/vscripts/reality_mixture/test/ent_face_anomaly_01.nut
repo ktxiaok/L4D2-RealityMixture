@@ -1,0 +1,1 @@
+::RealityMixture.FaceAnomaly(self, { EffectTrigger = Ent("face_anomaly_effect_trigger_01"), DirectEffectRange = 100});

@@ -1,0 +1,1 @@
+::RealityMixture.InsanitySpace(self);

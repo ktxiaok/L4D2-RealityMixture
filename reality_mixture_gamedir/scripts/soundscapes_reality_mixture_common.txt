@@ -1,0 +1,18 @@
+RealityMixture.Empty
+{
+    dsp 1
+}
+
+RealityMixture.Ambience.Void01
+{
+    dsp 1
+
+    playlooping
+    {
+        channel CHAN_AUTO
+        volume 1
+        pitch 100
+        soundlevel SNDLVL_NONE
+        wave "reality_mixture/ambient/ambience_void_01.wav"
+    }
+}

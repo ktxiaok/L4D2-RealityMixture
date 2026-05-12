@@ -1,0 +1,5 @@
+UnlitGeneric
+{
+    $basetexture "reality_mixture/horror/horror_02"
+    $nofog 1
+}

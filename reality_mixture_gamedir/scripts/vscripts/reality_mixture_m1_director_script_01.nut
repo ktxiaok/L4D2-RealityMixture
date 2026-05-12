@@ -1,0 +1,3 @@
+DirectorOptions <- {
+	DominatorLimit = -1
+};
