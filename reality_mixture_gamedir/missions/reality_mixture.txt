@@ -1,7 +1,7 @@
 "mission"
  {
  	"Name"		"RealityMixture"	//For matchmaking system. Only letters A-Z and Numbers 0-9 allowed.
-  	"Version"	"010"		//For matchmaking system. Only Numbers 0-9 allowed.
+  	"Version"	"2"		//For matchmaking system. Only Numbers 0-9 allowed.
  
  	// Main Menu representation of Campaign.
  	"DisplayTitle"	"Reality Mixture"

@@ -1,6 +1,6 @@
 "AddonInfo"
 {
-	addonversion		"0.1.0"				//Max 31 	characters. Allows decimals.
+	addonversion		"0.1.1"				//Max 31 	characters. Allows decimals.
 	addontitle			"Reality Mixture"	//Max 127 	characters.
 	addonauthor			"KtOrangeeK"	//Max 119 	characters.
 	addonDescription	"A horror map for Left 4 Dead 2."	//Max 1023 	characters.

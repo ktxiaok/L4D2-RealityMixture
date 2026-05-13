@@ -120,6 +120,10 @@ class FaceAnomaly
 	function SetPosition(pos)
 	{
 		_hostEnt.SetOrigin(pos);
+		if (_sprite.IsValid())
+		{
+			_sprite.SetOrigin(pos);
+		}
 	}
 
 	function GetSpriteMaterialName()
@@ -144,17 +148,7 @@ class FaceAnomaly
 			return;
 		}
 
-		if (!_sprite.IsValid())
-		{
-			_sprite = SpawnEntityFromTable("env_sprite", {
-				spawnflags = ctx.SF_SPRITE_STARTON,
-				rendermode = ctx.kRenderWorldGlow,
-				scale = 0.5,
-				origin = _hostEnt.GetOrigin()
-			});
-			ctx.SetEntityParent(_sprite, _hostEnt);
-		}
-
+		_EnsureSpritePresent();
 		_sprite.SetModel(material);
 	}
 
@@ -208,6 +202,20 @@ class FaceAnomaly
 		if (_hostEnt.IsValid())
 		{
 			_hostEnt.Kill();
+		}
+	}
+
+	function _EnsureSpritePresent()
+	{
+		if (!_sprite.IsValid())
+		{
+			_sprite = SpawnEntityFromTable("env_sprite", {
+				spawnflags = ctx.SF_SPRITE_STARTON,
+				rendermode = ctx.kRenderWorldGlow,
+				scale = 0.5,
+				origin = _hostEnt.GetOrigin()
+			});
+			//ctx.SetEntityParent(_sprite, _hostEnt);
 		}
 	}
 
