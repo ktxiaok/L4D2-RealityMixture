@@ -1,7 +1,7 @@
 "mission"
  {
  	"Name"		"RealityMixture"	//For matchmaking system. Only letters A-Z and Numbers 0-9 allowed.
-  	"Version"	"2"		//For matchmaking system. Only Numbers 0-9 allowed.
+  	"Version"	"3"		//For matchmaking system. Only Numbers 0-9 allowed.
  
  	// Main Menu representation of Campaign.
  	"DisplayTitle"	"Reality Mixture"
@@ -25,7 +25,7 @@
  	// Other options. 0 = Off, 1 = on. 
  	"allow_cola"		"1"	// Allows the Dead Center cola bottles to spawn.
  	"no_wpn_restore"	"0"	// On player wipe, don't keep any weapons.
- 	"no_female_boomers"	"0"	// Disables spawning of the Boomette.
+ 	"no_female_boomers"	"1"	// Disables spawning of the Boomette.
  	"no_cs_weapons"		"0"	// Disables spawning of the German version CS weapons. AS of the "The Last Stand" Css weapons are available for every version of the game. It is unsure if this string is still in use.
  	"allow_diesel"		"0"	// Allows the Hard Rain Diesel cans to be used.
  

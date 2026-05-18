@@ -77,4 +77,5 @@
 *.mdl filter=lfs diff=lfs merge=lfs -text
 *.phy filter=lfs diff=lfs merge=lfs -text
 *.vvd filter=lfs diff=lfs merge=lfs -text
+*.raw filter=lfs diff=lfs merge=lfs -text
 *.aup3 filter=lfs diff=lfs merge=lfs -text

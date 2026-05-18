@@ -85,26 +85,36 @@ class ViewController
 		return ctx.ViewController(targetEnt);
 	}
 
+	static TryGet = function(targetEnt)
+	{
+		local targetEntScope = targetEnt.GetScriptScope();
+		if (targetEntScope && ScopeSlotName_ViewController in targetEntScope)
+		{
+			return targetEntScope[ScopeSlotName_ViewController];
+		}
+
+		return null;
+	};
+
 	static TryGetOrCreate = function(targetEnt)
 	{
 		if (!IsApplicableTargetEntity(targetEnt))
 		{
 			return null;
 		}
-		local targetEntScope = targetEnt.GetScriptScope();
-		if (targetEntScope && ScopeSlotName_ViewController in targetEntScope)
+
+		local viewController = TryGet(targetEnt);
+		if (viewController)
 		{
-			return targetEntScope[ScopeSlotName_ViewController];
+			return viewController;
 		}
-		else
-		{
-			return ctx.ViewController(targetEnt);
-		}
+		
+		return ctx.ViewController(targetEnt);
 	}
 
 	static IsApplicableTargetEntity = function(ent)
 	{
-		return ctx.IsAliveSurvivor(ent);
+		return ent.IsPlayer() && ent.IsSurvivor() && !ent.IsDead();
 	};
 
 	function IsValid()
@@ -118,6 +128,15 @@ class ViewController
 			Kill();
 		}
 		return _valid;
+	}
+
+	function IsActive()
+	{
+		if (_coroutineRef.Get())
+		{
+			return true;
+		}
+		return false;
 	}
 
 	function Kill()
@@ -141,6 +160,11 @@ class ViewController
 
 	function Activate(viewName, duration)
 	{
+		if (_targetEnt.IsDying())
+		{
+			return;
+		}
+
 		local viewcontrol = ctx.TryGetViewcontrol(viewName);
 		if (!viewcontrol)
 		{
@@ -180,4 +204,26 @@ EventCallbackRegistry.Get("OnGameEvent_player_spawn").Register(function(args)
 {
 	local player = GetPlayerFromUserID(args.userid);
 	ViewController.TryCreate(player);
+}.bindenv(ctx));
+
+EventCallbackRegistry.Get("OnGameEvent_player_death").Register(function(args)
+{
+	if ("userid" in args)
+	{
+		local player = GetPlayerFromUserID(args.userid);
+		local viewController = ViewController.TryGet(player);
+		if (viewController && viewController.IsActive())
+		{
+			viewController.Deactivate();
+
+			local viewcontrol = SpawnEntityFromTable("point_viewcontrol_multiplayer", {
+				origin = player.GetOrigin(),
+				angles = player.GetAngles()
+			});
+			EntFireByHandle(viewcontrol, "AddPlayer", "", 0, player);
+			EntFireByHandle(viewcontrol, "Enable");
+			EntFireByHandle(viewcontrol, "Disable", "", 0.5);
+			EntFireByHandle(viewcontrol, "Kill", "", 1);
+		}
+	}
 }.bindenv(ctx));

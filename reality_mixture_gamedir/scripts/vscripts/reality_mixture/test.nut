@@ -32,29 +32,33 @@ local Test = function()
 
 
 
+	// local player = Ent("!player");
+	// local prop = Ent("prop_dynamic_01");
+	// local trigger = SpawnEntityFromTable("script_trigger_multiple", {
+	// 	spawnflags = SF_TRIGGER_ALLOW_CLIENTS,
+	// 	origin = prop.GetOrigin(),
+	// 	extent = Vector(100, 100, 100),
+	// 	allowincap = 1
+	// });
+	// SetEntityParent(trigger, prop);
+	// local monitor = TriggerTouchingMonitor(trigger, {
+	// 	StartTouchCallback = @(args) printl("Test Trigger StartTouch"),
+	// 	EndTouchCallback = @(args) printl("Test Trigger EndTouch")
+	// });
+	// if ("TestTrigger" in this && TestTrigger.IsValid())
+	// {
+	// 	TestTrigger.Kill();
+	// }
+	// TestTrigger <- trigger;
+	// ::Test1 <- function()
+	// {
+	// 	prop.SetOrigin(player.GetOrigin());
+	// 	printl("prop origin: " + prop.GetOrigin());
+	// 	printl("trigger origin: " + trigger.GetOrigin());
+	// }
+
 	local player = Ent("!player");
-	local prop = Ent("prop_dynamic_01");
-	local trigger = SpawnEntityFromTable("script_trigger_multiple", {
-		spawnflags = SF_TRIGGER_ALLOW_CLIENTS,
-		origin = prop.GetOrigin(),
-		extent = Vector(100, 100, 100),
-		allowincap = 1
-	});
-	SetEntityParent(trigger, prop);
-	local monitor = TriggerTouchingMonitor(trigger, {
-		StartTouchCallback = @(args) printl("Test Trigger StartTouch"),
-		EndTouchCallback = @(args) printl("Test Trigger EndTouch")
-	});
-	if ("TestTrigger" in this && TestTrigger.IsValid())
-	{
-		TestTrigger.Kill();
-	}
-	TestTrigger <- trigger;
-	::Test1 <- function()
-	{
-		prop.SetOrigin(player.GetOrigin());
-		printl("prop origin: " + prop.GetOrigin());
-		printl("trigger origin: " + trigger.GetOrigin());
-	}
+	ViewController.TryGetOrCreate(player).Activate("horror_common_01", 999);
+	Coroutine.Delay(@() ctx.TakeFatalDamage(player), 1).Start();
 }.bindenv(ctx);
 Test();

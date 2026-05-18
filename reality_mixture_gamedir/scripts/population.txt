@@ -1,0 +1,76 @@
+Population
+{
+	//------------------------------------------------------------------------
+	// Areas are defined in the map or the nav file.  Right now we're using
+	// nav place names.  If no place name is used, we look for 'default'.
+	// Populations are lists of models, with percentages adding up to 100.
+	// Model names should be specified without the .mdl extension, and
+	// without the directory name (this assumes all infected models are in
+	// models/infected).
+
+	
+
+	//------------------------------------------------------------------------
+	default
+	{
+		common_military_male01	100
+	}
+
+
+	//------------------------------------------------------------------------
+	// random zombie type spawned at the church after the mini-finale
+	church
+	{
+		hunter	25
+		smoker	25
+		boomer	50
+	}
+
+
+	smoker
+	{
+		smoker	100
+	}
+
+	hunter
+	{
+		hunter	100
+	}
+
+	boomer
+	{
+		boomer	100
+	}
+
+	tank
+	{
+		tank	100
+	}
+
+	witch
+	{
+		witch	100
+	}
+
+	jockey
+	{
+		jockey	100
+	}
+
+	charger
+	{
+		charger	100
+	}
+
+	spitter
+	{
+		spitter	100
+	}
+
+	new_special
+	{
+		jockey	33
+		charger	33
+		spitter	34
+	}
+}

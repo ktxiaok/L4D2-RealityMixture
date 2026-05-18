@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8870"
-	"mapversion" "24"
+	"mapversion" "25"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -89,7 +89,7 @@ bgimages_plus
 world
 {
 	"id" "1"
-	"mapversion" "24"
+	"mapversion" "25"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -8958,7 +8958,7 @@ entity
 {
 	"id" "124"
 	"classname" "func_door_rotating"
-	"_minlight" "0.2"
+	"_minlight" "0.05"
 	"always_fire_blocked_outputs" "0"
 	"angles" "0 0 0"
 	"disablereceiveshadows" "0"

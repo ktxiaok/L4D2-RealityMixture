@@ -532,6 +532,11 @@ function FindEntitiesByName(name)
 	}
 }
 
+function EntFireByHandle(ent, action, value = "", delay = 0, activator = null)
+{
+	DoEntFire("!caller", action, value, delay, activator, ent);
+}
+
 function SetEntityParent(ent, parentEnt)
 {
 	if (parentEnt)

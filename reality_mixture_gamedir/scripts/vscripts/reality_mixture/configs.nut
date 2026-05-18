@@ -1,5 +1,5 @@
 ConfigItem("InsanityMax", 						"float", 	3.0, 	RangeConfigFilters.NonNegative);
-ConfigItem("InsanityDecayRate", 				"float", 	0.5, 	RangeConfigFilters.NonNegative);
+ConfigItem("InsanityDecayRate", 				"float", 	0.8, 	RangeConfigFilters.NonNegative);
 ConfigItem("InsanityHorrorViewThreshold", 		"float", 	0.5, 	RangeConfigFilters.NonNegative);
 ConfigItem("InsanityDamageThreshold", 			"float", 	1.5, 	RangeConfigFilters.NonNegative);
 ConfigItem("InsanityHorrorViewDurationMin", 	"float", 	0.2, 	RangeConfigFilters.NonNegative);

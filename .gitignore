@@ -2,6 +2,9 @@ temp/
 backups/
 
 l4d2_dir_symlink
+l4d2_dir_symlink/
+
+vpk_v1.exe
 
 *.vmx
 *.bsp

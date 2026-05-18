@@ -1,5 +1,7 @@
 local ctx = this;
 
+IncludeScript("reality_mixture/custom_sound_precache");
+
 ViewNames.HorrorCommon <- [];
 
 function ViewNames::LoadHorrorCommon()
